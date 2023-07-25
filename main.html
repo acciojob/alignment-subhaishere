@@ -1,16 +1,89 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+<title>HTML Tables</title>
+<style>
+.middle {
+margin: auto;
+width: 60%;
+}
+
+.center {
+text-align: center;
+}
+
+.right {
+text-align: right;
+}
+
+table {
+border: 1px solid black;
+border-spacing: 1px;
+}
+
+td {
+padding: 1px;
+border: 1px solid black;
+}
+
+.green {
+background-color: green;
+}
+
+.blue {
+background-color: blue;
+}
+</style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+<h1>HTML Tables</h1>
 
+<!-- First table -->
+<table class="middle" id="table-1">
+<tr>
+<td class="center" id="t11">First column</td>
+<td class="center" id="t12">Second column</td>
+<td class="right" id="t13">Third column</td>
+</tr>
+<tr>
+<td class="center">This is the middle column</td>
+<td class="right">This is the right column</td>
+</tr>
+<tr>
+<td class="center">This is the last column</td>
+</tr>
+</table>
+
+<!-- Second table -->
+<table class="middle" id="table-2">
+<tr>
+<td rowspan="6" id="t21">This cell spans 6 rows</td>
+</tr>
+<tr>
+<td>This is the first column</td>
+</tr>
+<tr>
+<td>This is the second column</td>
+</tr>
+<tr>
+<td>This is the third column</td>
+</tr>
+<tr>
+<td>This is the fourth column</td>
+</tr>
+<tr>
+<td>This is the fifth column</td>
+</tr>
+</table>
+
+<!-- Third table -->
+<table class="middle" id="table-3">
+<tr class="green">
+<td id="t-image"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/HTML5_logo.svg/1200px-HTML5_logo.svg.png"></td>
+</tr>
+<tr class="blue">
+<td>This is the first column</td>
+</tr>
+</table>
 </body>
-
 </html>
